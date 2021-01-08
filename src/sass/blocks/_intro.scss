@@ -1,0 +1,100 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url("../img/intro-bg.jpg") center (center / cover) no-repeat;
+    &__inner {
+        width: 100%;
+        max-width: 880px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__title {        
+        font-size: 150px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1;
+        &:after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+
+            background-color: #fff;
+            margin: 60px auto;
+        }
+    }
+    &__suptitle {
+        margin-bottom: 20px;
+        font-size: 72px;
+        color:#fff;
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+    }
+    &__slider {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+            .slider__inner {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+        
+        .slider__item {
+            padding: 20px 0;
+            border-top: 3px solid #fff;
+            position: relative;
+            width: 23%;
+            font-size: 18px;
+            color:#fff;
+            text-transform: uppercase;
+            opacity: .7
+        }
+            .slider__num {
+                font-size: 24px;
+                font-weight: 700;
+        }
+            .slider__item.active {
+                opacity: 1;
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 70px;
+                    height: 3px;
+                    position: absolute;
+                    top: -3px;
+                    left: 0;
+                    z-index: 1;
+                    background-color: #f38181;
+                }
+        }            
+    }
+
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+    transition: background .1s linear, color .1s linear;
+    &:hover {
+        background-color: #fff;
+        color: #fce38a;
+    }
+
+}
