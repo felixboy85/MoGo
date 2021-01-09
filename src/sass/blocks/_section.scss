@@ -1,0 +1,35 @@
+.section {
+    padding: 80px 0;
+    &__header {
+        width: 100%;
+        max-width: 950px;
+        margin: 0 auto 40px;
+
+        text-align: center;
+    }
+    &__suptitle {
+        font-size: 24px;
+        color: #333333;
+        font-family: 'Kaushan Script', cursive;
+        // margin-bottom: 25px;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #333333;
+        text-transform: uppercase;
+        &:after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            margin: 30px auto;
+            background-color: #f38181;
+        }
+    }
+    &__text {
+        font-size: 15px;
+        color: #999999;
+        font-family: 'Roboto', sans-serif;
+    }
+}
