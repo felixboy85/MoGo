@@ -26,6 +26,17 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    margin: 40px 0;
+
+    border: 0;
+    background-color: #e5e5e5;
+}
+
 
 
 @import 'blocks/header';
@@ -33,6 +44,9 @@ h1, h2, h3, h4, h5, h6 {
 @import 'blocks/section';
 @import 'blocks/about';
 @import 'blocks/statistics';
+@import 'blocks/services';
+@import 'blocks/devices';
+
 
 
 

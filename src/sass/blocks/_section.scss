@@ -3,7 +3,7 @@
     &__header {
         width: 100%;
         max-width: 950px;
-        margin: 0 auto 40px;
+        margin: 0 auto 50px;
 
         text-align: center;
     }
@@ -32,4 +32,9 @@
         color: #999999;
         font-family: 'Roboto', sans-serif;
     }
+}
+
+.section--devices {
+    padding-bottom: 0;
+    background: url('../img/Design/design-bg.jpg') center (center / cover) no-repeat;
 }

@@ -1,0 +1,29 @@
+.services {
+    display: flex;
+    &__item {
+        flex: 1 1 0;
+
+        padding-left: 85px;
+        padding-right: 35px;
+        position: relative;
+    }
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 28px;
+        z-index: 1;
+    }
+    &__title {
+        margin-bottom: 10px;
+
+        font-size: 14px;
+        color: #333333;
+        text-transform: uppercase;
+        
+    }
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: #999999;
+    }
+}

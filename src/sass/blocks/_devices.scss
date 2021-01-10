@@ -1,0 +1,14 @@
+.devices {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    &__item {
+        display: block;
+        &--iphone {
+            position: absolute;
+            bottom: -80px;
+            right: -50px;
+            z-index: 1;
+        }
+    }    
+}
