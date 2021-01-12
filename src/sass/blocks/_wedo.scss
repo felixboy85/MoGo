@@ -1,0 +1,70 @@
+.wedo {
+    display: flex;
+    &__item {
+        width: 50%;
+    }
+}
+
+.accordion {
+    &__item {
+        margin-bottom: 10px;
+        border: 1px solid #e5e5e5;
+        &.active .accordion__content {
+            display: block;
+        }
+        &.active .accordion__header:after {
+            transform: translateY(-50%) rotate(-45deg);
+            margin-top: 5px;
+            
+        }
+        &.active .accordion__header {
+            border-bottom-color: #e5e5e5;
+        }
+    }
+    &__header {
+        padding: 15px 20px 15px 65px;
+        position: relative;
+        border-bottom: 1px solid transparent;
+
+        cursor: pointer;
+        &:after {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+
+            border-top: 2px solid #cccccc;
+            border-right: 2px solid #cccccc;
+
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            z-index: 1;
+
+            transform: translateY(-50%) rotate(135deg);
+        }
+    }
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        z-index: 1;
+
+        transform: translateY(-50%);
+    }
+    &__content {
+        padding: 15px 20px;
+        display: none;
+
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: #999999;
+        font-style: italic;
+        font-weight: 300;
+    }
+    &__title {
+        font-size: 14px;
+        color: #333333;
+        text-transform: uppercase;
+    }
+}
