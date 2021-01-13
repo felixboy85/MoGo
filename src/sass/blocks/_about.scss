@@ -1,28 +1,29 @@
-.about {
+.card {
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
     &__item {
-        position: relative;
         width: 380px;
-        background-color: #95e1d3;
-        &:hover .about__img img {
+        &:hover .card__img {
+            transform: translate3d(-10px, -10px, 0);
+        }
+        &:hover .card__img img {
             opacity: .1;
         }
-        &:hover .about__text {
+        &:hover .card__text {
             opacity: 1;
-        }
-        
+        }               
+    }
+    &__inner {
+        position: relative;
+        background-color: #95e1d3;
     }
     &__img {
         background: linear-gradient(to bottom, #f38181, #fce38a);
         transition: transform .2s linear;
-        &:hover {
-            transform: translate3d(-10px, -10px, 0);
-        }
-        
     }
-    .about__img img {
+
+    .card__img img {
         display: block;
         transition: opacity .1s linear;
     }
@@ -43,4 +44,22 @@
 
         transition: opacity .2s linear;
     }
+    &__info {
+        margin-top: 20px;
+        text-align: center;
+    }
+    &__name {
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #333333;
+    }
+    &__prof {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 300;
+        color: #999999;
+    }
 }
+
