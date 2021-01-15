@@ -77,8 +77,27 @@
 }
 
 @media (max-width: 771px) {
+    .intro {
+        min-height: 650px;
+    }
+    .header {
+        padding-top: 10px 0;
+    }
     .nav {
         display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #eb8b8d;
+    }
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+    }
+    .nav-toggle {
+        display: block;
     }
     .slider__text {
         display: none;
@@ -160,6 +179,7 @@
 }
 
 @media (max-width: 576px) {
+    
     .intro__suptitle{
         font-size: 22px;
     }
