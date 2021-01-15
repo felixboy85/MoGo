@@ -1,9 +1,11 @@
 .card {
-    margin-top: 80px;
+    margin: 80px -15px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     &__item {
-        width: 380px;
+        width: 33.33333%;
+        padding: 0 15px;
         &:hover .card__img {
             transform: translate3d(-10px, -10px, 0);
         }
@@ -25,6 +27,8 @@
 
     .card__img img {
         display: block;
+        max-width: 100%;
+        height: auto;
         transition: opacity .1s linear;
     }
     &__text {

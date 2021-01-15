@@ -1,6 +1,9 @@
 .footer {
     padding-top: 65px;
     background-color: #f8f8f8;
+    &__col {
+        padding: 0 15px;
+    }
     &__col--first {
         width: 40%;
     }
@@ -12,6 +15,8 @@
     }
     &__inner {
         display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
         justify-content: space-between;
         padding-bottom: 65px;
     }
@@ -149,10 +154,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     &__item {
-        width: 32.33333%;
+        width: 33%;
         border-bottom: 1px solid #fff;
         img {
             display: block;
+            max-width: 100%;
+            height: auto;
         }
     } 
     &__link {

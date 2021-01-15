@@ -1,11 +1,16 @@
 .services {
     display: flex;
+    flex-wrap: wrap;
     &__item {
-        flex: 1 1 0;
+        width: 33.33333%;
 
-        padding-left: 85px;
-        padding-right: 35px;
+        padding: 0 35px 40px 85px;
         position: relative;
+        margin-bottom: 40px;
+        
+        &--border {
+            border-bottom: 1px solid #e5e5e5;
+        }
     }
     &__icon {
         position: absolute;

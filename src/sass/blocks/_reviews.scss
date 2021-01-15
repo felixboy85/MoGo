@@ -6,6 +6,9 @@
         position: relative;   
     }
     &__photo {
+        display: block;
+        width: 210px;
+        height: 210px;
         position: absolute;
         top: 0;
         left: 0;
