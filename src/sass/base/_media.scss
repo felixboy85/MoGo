@@ -36,7 +36,7 @@
     .services__item--border {
         border-bottom: 0;
     }
-    .reviews {
+    .reviews .slick-slider {
         padding: 0 60px;
     }
     .reviews__photo {
@@ -81,7 +81,7 @@
         min-height: 650px;
     }
     .header {
-        padding-top: 10px 0;
+        padding: 5px 0;
     }
     .nav {
         display: none;
@@ -90,6 +90,9 @@
         top: 100%;
         left: 0;
         background-color: #eb8b8d;
+    }
+    .nav.active {
+        display: block;
     }
     .nav__link {
         display: block;
@@ -216,10 +219,10 @@
         bottom: -50px;
         right: -15px;
     }
-    .reviews {
+    .reviews .slick-slider {
         padding: 0;
     }
-    .reviews__btn {
+    .slick-arrow {
         top: 18%;
     }
     .logos {

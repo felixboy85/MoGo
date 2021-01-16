@@ -20,6 +20,7 @@
 
 }
 .header.fixed {
+    padding: 10px 0;
     background-color: #eb8b8d;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
 
@@ -47,6 +48,9 @@
     top: 24px;
     right: 24px;
     z-index: 1;
+    &:focus {
+        outline: 0;
+    }
     &__item {
         display: block;
         width: 100%;

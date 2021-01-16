@@ -1,7 +1,8 @@
 .reviews {
-    padding: 0 110px;
+    // padding: 0 110px;
     position: relative;
     &__item {
+        min-height: 210px;
         padding-left: 255px; 
         position: relative;   
     }
@@ -36,35 +37,42 @@
             background-color: #f38181;
         } 
     }
+}
+.reviews .slick-slider {
+    padding: 0 110px;
+}
+.slick-arrow {
+    display: block;
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
 
-    &__btn {
-        font-size: 0;
-        color: transparent;
-        position: absolute;
-        top: 50%;
-        z-index: 1;
-        transform: translateY(-50%);
-        &--prev {
-            left: 0;
-            transform: rotate(-45deg);
-        }
-        &--next {
-            right: 0;
-            transform: rotate(135deg);
-        }
-        &:after {
-            content: "";
-            display: block;
-            width: 16px;
-            height: 16px;
+.slick-arrow:focus {
+    outline: 0;
+}
 
-            border-top: 2px solid #cccccc;
-            border-left: 2px solid #cccccc;
+.slick-arrow:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
 
-        
-            top: 50%;
-            right: 20px;
-            z-index: 1;
-        }
-    }
+    border-top: 2px solid #cccccc;
+    border-left: 2px solid #cccccc;
+}    
+
+.slick-prev {
+    left: 0;
+    transform: rotate(-45deg); 
+}
+.slick-next {
+    right: 0;
+    transform: rotate(135deg);
 }
